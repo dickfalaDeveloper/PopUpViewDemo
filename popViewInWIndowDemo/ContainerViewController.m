@@ -31,8 +31,7 @@
     
     thirdRedVC = (ThirdRedViewController*)[mainStoryboard instantiateViewControllerWithIdentifier:@"ThirdRedViewController"];
     
-
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+ //    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
 //    [secondGreenVC.baseView addGestureRecognizer:tap];
 
    
@@ -49,6 +48,7 @@
 
 
 - (IBAction)popupGreenBtnAction:(id)sender {
+    
     [appDelegate.window addSubview: secondGreenVC.view];
     [appDelegate.window bringSubviewToFront:secondGreenVC.view];
 
